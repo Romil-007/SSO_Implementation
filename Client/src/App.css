@@ -1,42 +1,162 @@
-#root {
-  max-width: 1280px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f6fafd;
+  color: #223;
+}
+
+.omni-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.omni-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2.5rem;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(30, 144, 255, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.omni-logo {
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #1e90ff;
+  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
+}
+
+.omni-actions {
+  display: flex;
+  align-items: center;
+}
+
+.omni-signin-btn {
+  padding: 0.6rem 1.5rem;
+  background: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(30,144,255,0.08);
+  transition: background 0.2s;
+}
+.omni-signin-btn:hover {
+  background: #1573c7;
+}
+
+.omni-user-info {
+  font-size: 1.07rem;
+  color: #1e90ff;
+  font-weight: 600;
+}
+
+.omni-main {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2.5rem 1.2rem 1rem 1.2rem;
+}
+
+.omni-hero {
+  background: linear-gradient(90deg, #e3f0ff 0%, #f6fafd 100%);
+  border-radius: 16px;
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 2px 16px rgba(30, 144, 255, 0.05);
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.omni-hero h1 {
+  font-size: 2.3rem;
+  color: #1e90ff;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.omni-hero p {
+  font-size: 1.18rem;
+  color: #2d3a4a;
+  margin: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.omni-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.omni-section {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(30,144,255,0.06);
+  padding: 1.5rem 1.2rem;
+  flex: 1 1 260px;
+  max-width: 320px;
+  min-width: 220px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.omni-section h2 {
+  margin-top: 0.7rem;
+  font-size: 1.25rem;
+  color: #1e90ff;
+  font-weight: 600;
+}
+.omni-section p, .omni-section ul {
+  font-size: 1.08rem;
+  color: #2d3a4a;
+  margin: 0.7rem 0 0 0;
+}
+.omni-section ul {
+  padding-left: 1.2rem;
+  text-align: left;
+}
+.omni-icon {
+  font-size: 2.1rem;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.omni-footer {
+  text-align: center;
+  padding: 1.2rem 0 0.7rem 0;
+  color: #7da0c9;
+  background: none;
+  font-size: 1rem;
+  border-top: 1px solid #e3f0ff;
+  margin-top: 2rem;
+}
+
+.omni-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  vertical-align: middle;
+  box-shadow: 0 1px 4px rgba(30,144,255,0.12);
+  border: 2px solid #e3f0ff;
+}
+
+@media (max-width: 800px) {
+  .omni-sections {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .omni-main {
+    padding: 1.2rem 0.3rem 1rem 0.3rem;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .omni-header {
+    padding: 1rem 0.7rem;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
