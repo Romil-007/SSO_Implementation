@@ -103,7 +103,7 @@ npm start
 ### 📖 Documentation
 **You can access the full documentation for this project here:**
 
-**[SSO Implementation Documentation]([./path/to/documentation.pdf](https://docs.google.com/document/d/1hlJzxz_INRbl-E4-N-3oU1iLJJUvg5LqVUdAhHt2J54/edit?usp=sharing))**
+**[SSO Implementation Documentation](https://docs.google.com/document/d/1hlJzxz_INRbl-E4-N-3oU1iLJJUvg5LqVUdAhHt2J54/edit?usp=sharing))**
 
 ##
 
