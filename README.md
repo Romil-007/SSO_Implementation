@@ -11,7 +11,7 @@ The goal of this project is to integrate secure and seamless authentication for 
 - [Romil Pandey](https://github.com/Romil-007)
 - [Sakshi Kore](https://github.com/sakshikore16)
 - [Shah Areeb](https://github.com/Areeb-7)
-- [Sakshi Kore](https://github.com/karunesh-28)
+- [Karunesh Chikne](https://github.com/karunesh-28)
 
 ### 🚀 Features
 
